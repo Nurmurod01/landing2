@@ -11,7 +11,7 @@ export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="relative m-0 p-0 max-h-screen ">
+    <div className="relative m-0 p-0 min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 ">
       <div className="container mx-auto px-4 py-6">
         <div className="text-center max-w-lg max-md:mx-auto mb-8 px-2 py-1 md:px-6 md:py-4 rounded-2xl shadow-xl shadow-sky-200">
           <p className="text-gray-800 text-2xl mb-4 font-semibold">
@@ -61,7 +61,7 @@ export default function HomePage() {
 
               <div className="space-y-3 font-normal tracking-normal text-2xl">
                 <div className="flex items-center  gap-3">
-                  <div className=" rounded-full p-1 mt-1 flex-shrink-0">
+                  <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
                     <Image src={Check} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
@@ -70,7 +70,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className=" rounded-full p-1 mt-1 flex-shrink-0">
+                  <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
                     <Image src={Check} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
@@ -79,7 +79,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="flex items-center gap-3">
-                  <div className=" rounded-full p-1 mt-1 flex-shrink-0">
+                  <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
                     <Image src={Check} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">

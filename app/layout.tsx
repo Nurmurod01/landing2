@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="uz">
       <body
-        className={`${roboto.className}  h-screen tracking-tight bg-gradient-to-br from-gray-100 to-gray-200`}
+        className={`${roboto.className} md:h-screen h-full  tracking-tight bg-gradient-to-br from-gray-100 to-gray-200`}
       >
         {children}
       </body>
