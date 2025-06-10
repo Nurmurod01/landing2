@@ -1,6 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Noto_Sans, Roboto } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 
 const roboto = Noto_Sans({

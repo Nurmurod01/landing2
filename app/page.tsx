@@ -3,8 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { BadgeCheck } from "lucide-react";
+
 import RegisterModal from "@/components/register-modal";
 import { Ai, Check } from "@/image/index";
 export default function HomePage() {
@@ -24,7 +23,7 @@ export default function HomePage() {
           {/* Title - Always at top */}
           <div className="w-full text-center sm:text-left mb-6">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight">
-              10 KUNDA SUN'IY INTELLEKT YORDAMIDA
+              10 KUNDA SUN&apos;IY INTELLEKT YORDAMIDA
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-blue-800 leading-tight">
               SHAXSIY BRENDINGIZNI NOLDAN QURING
@@ -49,7 +48,7 @@ export default function HomePage() {
               onClick={() => setShowModal(true)}
               className="w-full main-button bg-blue-800 hover:bg-blue-900 text-white font-bold py-6 px-10 rounded-full text-2xl transition-all duration-300 transform"
             >
-              RO'YXATDAN O'TISH
+              RO&apos;YXATDAN O'TISH
             </Button>
           </div>
           {/* Content Section */}
@@ -95,7 +94,7 @@ export default function HomePage() {
                 onClick={() => setShowModal(true)}
                 className="main-button w-3xl bg-blue-800 hover:bg-blue-900 text-white font-bold py-6 px-8 md:px-12 tracking-tight md:py-10 rounded-full text-lg md:text-3xl transition-all duration-300 transform"
               >
-                RO'YXATDAN O'TISH
+                RO&apos;YXATDAN O'TISH
               </Button>
             </div>
 

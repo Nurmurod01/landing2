@@ -17,10 +17,10 @@ export default function SuccessPage() {
       <div className="w-full md:mt-60 md:ms-40  max-md:max-w-md  space-y-8 mt-6">
         <div className="text-start max-md:text-center space-y-5">
           <h1 className="text-4xl md:text-4xl font-bold text-gray-900">
-            <span className="text-red-500">TO'XTANG!</span> OXIRGI QADAM QOLDI!
+            <span className="text-red-500">TO&apos;XTANG!</span> OXIRGI QADAM QOLDI!
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            Telegram kanalimizga qo'shilib, birinchi vazifangizni oling va
+            Telegram kanalimizga qo&apos;shilib, birinchi vazifangizni oling va
             boshqa ishtirokchilar bilan tanishing!
           </p>
         </div>
@@ -33,14 +33,14 @@ export default function SuccessPage() {
           onClick={handleSubscribe}
           className="w-full md:max-w-2xl bg-blue-800 main-button hover:bg-blue-900 text-white font-bold py-6 px-8 rounded-full text-2xl transition-all duration-300 transform"
         >
-          OBUNA BO'LISH
+          OBUNA BO&apos;LISH
         </Button>
 
         <Card className="bg-blue-50 border-blue-200 p-4 md:max-w-2xl">
           <div className="flex items-center gap-3">
             <Gift className="w-8 h-8 text-blue-600 flex-shrink-0" />
             <p className="text-base md:text-lg text-gray-700 font-medium">
-              Kurs davomida sovg'alar va bonuslar kutmoqda!
+              Kurs davomida sovg&apos;alar va bonuslar kutmoqda!
             </p>
           </div>
         </Card>
