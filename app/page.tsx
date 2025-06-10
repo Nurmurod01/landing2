@@ -48,7 +48,7 @@ export default function HomePage() {
               onClick={() => setShowModal(true)}
               className="w-full main-button bg-blue-800 hover:bg-blue-900 text-white font-bold py-6 px-10 rounded-full text-2xl transition-all duration-300 transform"
             >
-              RO&apos;YXATDAN O'TISH
+              RO&apos;YXATDAN O&apos;TISH
             </Button>
           </div>
           {/* Content Section */}
@@ -82,7 +82,7 @@ export default function HomePage() {
                     <Image src={Check} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
-                    Brendni monetizatsiya qilish yo'llari
+                    Brendni monetizatsiya qilish yo&apos;llari
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function HomePage() {
                 onClick={() => setShowModal(true)}
                 className="main-button w-3xl bg-blue-800 hover:bg-blue-900 text-white font-bold py-6 px-8 md:px-12 tracking-tight md:py-10 rounded-full text-lg md:text-3xl transition-all duration-300 transform"
               >
-                RO&apos;YXATDAN O'TISH
+                RO&apos;YXATDAN O&apos;TISH
               </Button>
             </div>
 

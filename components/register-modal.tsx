@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
-import { X, Gift } from "lucide-react";
+import { X } from "lucide-react";
 
 interface RegisterModalProps {
   isOpen: boolean;
@@ -53,11 +53,11 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
 
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight">
-            BEPUL ONLAYN DARSGA RO‘YXATDAN O‘TING
+            BEPUL ONLAYN DARSGA RO&apos;YXATDAN O&apos;TING
           </h2>
           <p className="text-gray-700 mt-3 text-lg">
-            Ma'lumotlaringizni to‘ldiring va <strong>bonus</strong>ga ega
-            bo‘ling!
+            Ma&apos;lumotlaringizni to&apos;ldiring va <strong>bonus</strong>ga ega
+            bo&apos;ling!
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
             className="main-button w-full text-xl font-bold py-5 px-6 rounded-full bg-blue-800 hover:bg-blue-900 text-white transition-all flex items-center justify-center gap-3"
           >
             {/* <Gift className="w-44 h-44" /> */}
-            KANALGA QO‘SHILISH
+            KANALGA QO&apos;SHILISH
           </Button>
         </form>
       </Card>
