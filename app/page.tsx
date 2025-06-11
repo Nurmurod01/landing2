@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import RegisterModal from "@/components/register-modal";
-import {  CheckSVG } from "@/image/index";
+import { CheckSVG } from "@/image/index";
 import ParticleAIVisualization from "@/components/ThreeD";
 export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
@@ -21,31 +21,22 @@ export default function HomePage() {
         <div className="flex flex-col items-center mb-5 md:mt-32">
           <div className="w-full text-center sm:text-left mb-6">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight">
-              10 KUNDA SUN&apos;IY INTELLEKT YORDAMIDA
+              10 KUNDA <span className="text-blue-800">SUN&apos;IY INTELLEKT</span>
             </h1>
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-blue-800 leading-tight">
-              SHAXSIY BRENDINGIZNI NOLDAN QURING
+            <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight">
+              YORDAMIDA <span className="text-blue-800">SHAXSIY BRENDINGIZNI</span>
+            </h1>
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight">
+              NOLDAN QURING
             </h2>
           </div>
 
           {/* Mobile: Image first, then content */}
-          <div className="block md:hidden w-full h-1/3">
+          <div className="w-full md:hidden h-64 mb-4">
             <div
-              className="flex justify-center items-center"
-              style={{
-                width: "50vw",
-                height: "100vh",
-                backgroundColor: "transparent",
-              }}
+              className="flex justify-center items-center w-full h-full"
+              style={{ backgroundColor: "transparent" }}
             >
-              {/* <Image
-                src={Ai}
-                alt="Instagram Course Instructor"
-                width={300}
-                height={400}
-                className="rounded-xl "
-                priority
-              /> */}
               <ParticleAIVisualization />
             </div>
           </div>

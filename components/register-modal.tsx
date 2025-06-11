@@ -52,7 +52,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
         </button>
 
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-900 leading-tight tracking-tight">
             BEPUL ONLAYN DARSGA RO&apos;YXATDAN O&apos;TING
           </h2>
           <p className="text-gray-700 mt-3 text-lg">
@@ -67,7 +67,7 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
             placeholder="Ismingiz"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full h-16 text-3xl p-5 border border-gray-300 rounded-lg"
+            className="w-full h-12 md:h-16 text-xl md:text-3xl p-4 md:p-5 border border-gray-300 rounded-lg"
             required
           />
           <Input
@@ -75,15 +75,14 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
             placeholder="+998"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="w-full h-16 text-3xl p-5 border border-gray-300 rounded-lg"
+            className="w-full h-12 md:h-16 text-xl md:text-3xl p-4 md:p-5 border border-gray-300 rounded-lg"
             required
           />
 
           <Button
             type="submit"
-            className="main-button w-full text-xl font-bold py-5 px-6 rounded-full bg-blue-800 hover:bg-blue-900 text-white transition-all flex items-center justify-center gap-3"
+            className="main-button w-full text-lg md:text-xl font-bold py-4 md:py-5 px-4 md:px-6 rounded-full bg-blue-800 hover:bg-blue-900 text-white transition-all flex items-center justify-center gap-3"
           >
-            {/* <Gift className="w-44 h-44" /> */}
             KANALGA QO&apos;SHILISH
           </Button>
         </form>
