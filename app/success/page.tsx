@@ -17,7 +17,8 @@ export default function SuccessPage() {
       <div className="w-full md:mt-60 md:ms-40  max-md:max-w-md  space-y-8 mt-6">
         <div className="text-start max-md:text-center space-y-5">
           <h1 className="text-4xl md:text-4xl font-bold text-gray-900">
-            <span className="text-red-500">TO&apos;XTANG!</span> OXIRGI QADAM QOLDI!
+            <span className="text-red-500">TO&apos;XTANG!</span> OXIRGI QADAM
+            QOLDI!
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
             Telegram kanalimizga qo&apos;shilib, birinchi vazifangizni oling va

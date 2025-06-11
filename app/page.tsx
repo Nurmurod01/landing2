@@ -5,7 +5,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import RegisterModal from "@/components/register-modal";
-import { Ai, Check } from "@/image/index";
+import { Ai, CheckSVG } from "@/image/index";
+import ParticleAIVisualization from "@/components/ThreeD";
 export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
 
@@ -17,10 +18,7 @@ export default function HomePage() {
             Bepul chellenj
           </p>
         </div>
-
-        {/* Main Content - Responsive Layout */}
         <div className="flex flex-col items-center mb-5 md:mt-32">
-          {/* Title - Always at top */}
           <div className="w-full text-center sm:text-left mb-6">
             <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-gray-900 leading-tight">
               10 KUNDA SUN&apos;IY INTELLEKT YORDAMIDA
@@ -31,16 +29,24 @@ export default function HomePage() {
           </div>
 
           {/* Mobile: Image first, then content */}
-          <div className="block md:hidden w-full ">
-            <div className="flex justify-center">
-              <Image
+          <div className="block md:hidden w-full h-1/3">
+            <div
+              className="flex justify-center items-center"
+              style={{
+                width: "50vw",
+                height: "100vh",
+                backgroundColor: "transparent",
+              }}
+            >
+              {/* <Image
                 src={Ai}
                 alt="Instagram Course Instructor"
                 width={300}
                 height={400}
                 className="rounded-xl "
                 priority
-              />
+              /> */}
+              <ParticleAIVisualization />
             </div>
           </div>
           <div className=" md:hidden mb-5">
@@ -51,7 +57,6 @@ export default function HomePage() {
               RO&apos;YXATDAN O&apos;TISH
             </Button>
           </div>
-          {/* Content Section */}
           <div className="w-full ">
             <div className="space-y-4 md:my-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -61,7 +66,7 @@ export default function HomePage() {
               <div className="space-y-3 font-normal tracking-normal text-2xl">
                 <div className="flex items-center  gap-3">
                   <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
-                    <Image src={Check} alt="check" height={60} width={60} />
+                    <Image src={CheckSVG} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
                     Kontent strategiyasi va rejalashtirish
@@ -70,7 +75,7 @@ export default function HomePage() {
 
                 <div className="flex items-center gap-3">
                   <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
-                    <Image src={Check} alt="check" height={60} width={60} />
+                    <Image src={CheckSVG} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
                     Ijtimoiy tarmoqlarda brendni rivojlantirish
@@ -79,7 +84,7 @@ export default function HomePage() {
 
                 <div className="flex items-center gap-3">
                   <div className=" rounded-full p-1 mt-1 max-md:max-h-12 max-md:max-w-12 flex-shrink-0">
-                    <Image src={Check} alt="check" height={60} width={60} />
+                    <Image src={CheckSVG} alt="check" height={60} width={60} />
                   </div>
                   <p className="text-gray-800">
                     Brendni monetizatsiya qilish yo&apos;llari
@@ -116,15 +121,15 @@ export default function HomePage() {
         </div>
       </div>
       {/* Desktop: Image on the right */}
-      <div className="hidden h-screen md:block md:absolute md:top-0 md:end-0 ">
-        <Image
-          src={Ai}
-          alt="Instagram Course Instructor"
-          width={900}
-          // height={1000}
-          className="rounded-xl h-full"
-          // priority
-        />
+      <div
+        className="hidden md:block md:absolute md:top-0 md:right-0 z-10"
+        style={{
+          width: "50vw",
+          height: "100vh",
+          backgroundColor: "transparent",
+        }}
+      >
+        <ParticleAIVisualization />
       </div>
 
       <RegisterModal isOpen={showModal} onClose={() => setShowModal(false)} />

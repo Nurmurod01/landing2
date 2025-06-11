@@ -56,8 +56,8 @@ export default function RegisterModal({ isOpen, onClose }: RegisterModalProps) {
             BEPUL ONLAYN DARSGA RO&apos;YXATDAN O&apos;TING
           </h2>
           <p className="text-gray-700 mt-3 text-lg">
-            Ma&apos;lumotlaringizni to&apos;ldiring va <strong>bonus</strong>ga ega
-            bo&apos;ling!
+            Ma&apos;lumotlaringizni to&apos;ldiring va <strong>bonus</strong>ga
+            ega bo&apos;ling!
           </p>
         </div>
 
