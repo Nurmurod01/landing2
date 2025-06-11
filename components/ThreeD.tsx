@@ -115,7 +115,7 @@ export default function ParticleAIVisualization() {
       const centerX = getCenterX()
       const centerY = getCenterY()
       
-      particlesRef.current.forEach((particle, index) => {
+      particlesRef.current.forEach((particle) => {
         particle.x += particle.vx
         particle.y += particle.vy
         particle.life++

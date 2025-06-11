@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import RegisterModal from "@/components/register-modal";
-import { Ai, CheckSVG } from "@/image/index";
+import {  CheckSVG } from "@/image/index";
 import ParticleAIVisualization from "@/components/ThreeD";
 export default function HomePage() {
   const [showModal, setShowModal] = useState(false);
